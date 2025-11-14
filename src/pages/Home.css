@@ -1,0 +1,22 @@
+.home-container {
+  background: #8b5e3c;      /* Brown */
+  height: 88vh;             /* Full screen minus navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #000;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #000;
+}

@@ -1,0 +1,22 @@
+{
+  "coffees": [
+    {
+      "id": "1",
+      "name": "Coffee 1",
+      "description": "Grown locally",
+      "price": 5
+    },
+    {
+      "id": "2",
+      "name": "Coffee 2",
+      "description": "Imported from Mexico",
+      "price": 10
+    },
+    {
+      "id": "1623",
+      "name": "Coffee 3",
+      "description": "Imported from Africa",
+      "price": 15
+    }
+  ]
+}

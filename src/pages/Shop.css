@@ -1,0 +1,41 @@
+.shop-layout {
+  display: flex;
+  height: 90vh;
+  background: #8b5e3c; /* brown background from mock-up */
+}
+
+/* Left Sidebar */
+.shop-sidebar {
+  width: 220px;
+  background: #a98260;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Checkboxes */
+.filter-group label {
+  display: block;
+  margin: 8px 0;
+  color: #fff;
+}
+
+/* Grid */
+.shop-grid {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+/* Coffee Card Styles */
+.coffee-card {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: #000;
+}
