@@ -5,10 +5,8 @@ import { useCoffees } from "../hooks/useCoffees";
 function CoffeeForm() {
   const { id } = useParams();
   const navigate = useNavigate();
-
   const isEditMode = Boolean(id);
   const { coffees, addCoffee, updateCoffee } = useCoffees();
-
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
@@ -23,10 +21,8 @@ function CoffeeForm() {
       setPrice(String(coffee.price));
     }
   }, [isEditMode, id, coffees]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const payload = {
       name,
       description,
@@ -65,7 +61,6 @@ function CoffeeForm() {
         .catch(console.error);
     }
   };
-
   return (
     <div>
       <h2>{isEditMode ? "Edit Coffee" : "Add New Coffee"}</h2>
@@ -77,14 +72,12 @@ function CoffeeForm() {
           onChange={(e) => setName(e.target.value)}
           required
         />
-
         <textarea
           placeholder="Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
         />
-
         <input
           type="number"
           placeholder="Price"
@@ -94,7 +87,6 @@ function CoffeeForm() {
           min="0"
           required
         />
-
         <button type="submit">
           {isEditMode ? "Update Coffee" : "Create Coffee"}
         </button>
@@ -102,5 +94,4 @@ function CoffeeForm() {
     </div>
   );
 }
-
 export default CoffeeForm;

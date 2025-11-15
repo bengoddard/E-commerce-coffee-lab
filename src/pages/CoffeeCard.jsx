@@ -1,6 +1,4 @@
-
 function CoffeeCard({ c }){
-
     return(
         <div className="coffee-card">
             <h2>{c.name}</h2>
@@ -8,7 +6,6 @@ function CoffeeCard({ c }){
             <h2>{c.price}</h2>
         </div>
     )
-
 }
 
 export default CoffeeCard;
