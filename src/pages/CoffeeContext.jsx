@@ -16,13 +16,11 @@ export function CoffeeProvider({ children }) {
   function addCoffee(newCoffee) {
     setCoffees((prev) => [...prev, newCoffee]);
   }
-
   function updateCoffee(updatedCoffee) {
     setCoffees((prev) =>
       prev.map((c) => (c.id === updatedCoffee.id ? updatedCoffee : c))
     );
   }
-
   return (
     <CoffeeContext.Provider value={{ coffees, addCoffee, updateCoffee, selectedCoffeeId, setSelectedCoffeeId }}>
       {children}
