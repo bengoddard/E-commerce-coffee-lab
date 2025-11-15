@@ -1,10 +1,9 @@
 .shop-layout {
   display: flex;
   height: 90vh;
-  background: #8b5e3c; /* brown background from mock-up */
+  background: #8b5e3c;
 }
 
-/* Left Sidebar */
 .shop-sidebar {
   width: 220px;
   background: #a98260;
@@ -14,14 +13,12 @@
   gap: 20px;
 }
 
-/* Checkboxes */
 .filter-group label {
   display: block;
   margin: 8px 0;
   color: #fff;
 }
 
-/* Grid */
 .shop-grid {
   flex: 1;
   padding: 20px;
@@ -30,7 +27,6 @@
   gap: 20px;
 }
 
-/* Coffee Card Styles */
 .coffee-card {
   background: #f2f2f2;
   padding: 10px;

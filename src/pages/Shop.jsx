@@ -7,16 +7,13 @@ import "./Shop.css"
 
 function Shop() {
     const [search, setSearch] = useState("");
-
     const filteredCoffees = useFilteredCoffees(search);
-
     return (
         <>
             <NavBar />
       <div className="shop-layout">
         <aside className="shop-sidebar">
           <Search search={search} setSearch={setSearch} />
-
           <div className="filter-group">
             <label><input type="checkbox" /> Location 1</label>
             <label><input type="checkbox" /> Location 2</label>
@@ -24,7 +21,6 @@ function Shop() {
             <label><input type="checkbox" /> Location 4</label>
           </div>
         </aside>
-
         <main className="shop-grid">
           <CoffeeList coffees={filteredCoffees} />
         </main>
